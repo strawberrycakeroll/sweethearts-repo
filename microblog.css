@@ -3,7 +3,7 @@ background-image: url("https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/tumb
 }
 
 button {
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-border: 3px dashed red;
-outline: 2px solid blue;
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+border: 0px transparent;
+outline: 0px transparent;
 }
