@@ -1,3 +1,9 @@
 body {
 background-image: url("https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/tumblr_mf70opNl1y1rhuas2o2_250.gif");
 }
+
+button {
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+border: 3px dashed red;
+outline: 2px solid blue;
+}
