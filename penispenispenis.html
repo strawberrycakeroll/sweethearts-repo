@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Multiple Image Buttons Example</title>
+<title>Image Button Popups</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -11,6 +11,7 @@
     margin-top: 50px;
   }
 
+  /* === Image Buttons === */
   button {
     box-shadow: none;
     border: none;
@@ -30,39 +31,61 @@
     transform: scale(1.1);
   }
 
-  .popup-image {
-    display: none;
-    margin-top: 20px;
+  /* === Popup Modal === */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .modal-content img {
     width: 300px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-btn:hover {
+    color: red;
   }
 </style>
 </head>
 <body>
 
-  <!-- Button 1 -->
-  <div>
-    <button onclick="toggleImage('img1')">
-      <img src="https://file.garden/Z_fobQ8HS2YH3ES0/rentry/Blood%20of%20Adeline.png" alt="Button 1">
-    </button>
-    <img id="img1" class="popup-image" src="https://placekitten.com/300/200" alt="Popup 1">
-  </div>
+  <!-- === Button 1 === -->
+  <button onclick="openModal('modal1')">
+    <img src="https://file.garden/Z_fobQ8HS2YH3ES0/rentry/Blood%20of%20Adeline.png" alt="Button 1">
+  </button>
 
-  <!-- Button 2 -->
-  <div>
-    <button onclick="toggleImage('img2')">
-      <img src="https://file.garden/Z_fobQ8HS2YH3ES0/rentry/Another%20Button.png" alt="Button 2">
-    </button>
-    <img id="img2" class="popup-image" src="https://placebear.com/300/200" alt="Popup 2">
-  </div>
-
-  <script>
-    function toggleImage(id) {
-      const img = document.getElementById(id);
-      img.style.display = (img.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
-
-</body>
-</html>
+  <!-- === Modal 1 === -->
+  <div id="modal1" class="modal" onclick="closeModal(event, 'modal1')">
+    <div class="
