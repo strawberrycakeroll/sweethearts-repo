@@ -10,4 +10,8 @@ padding-block: 0px;
 padding-inline: 0px;
 background-color: Transparent;
 background-repeat:no-repeat;
+position: fixed;              /* stays in place when scrolling */
+top: 240px;                   /* distance from top */
+left: 480px;                  /* distance from left */
+z-index: 1000;     
 }
