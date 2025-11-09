@@ -21,3 +21,14 @@ margin: 0px;
   left: 29%;
   z-index: 1000;
 }
+
+#MeloPage button {
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+border: 0px transparent;
+outline: 0px transparent;
+padding-block: 0px;
+padding-inline: 0px;
+background-color: Transparent;
+background-repeat:no-repeat;
+margin: 0px;
+}
