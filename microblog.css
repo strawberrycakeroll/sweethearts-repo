@@ -9,7 +9,8 @@ outline: 0px transparent;
 padding-block: 0px;
 padding-inline: 0px;
 background-color: Transparent;
-background-repeat:no-repeat;  
+background-repeat:no-repeat;
+margin: 0px;
 }
 
 #my-melo-tag {
