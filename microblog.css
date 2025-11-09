@@ -5,7 +5,7 @@ margin: 0px;
 
 
 
-#my-melo-tag button {
+#MyMeloTag button {
 box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
 border: 0px transparent;
 outline: 0px transparent;
@@ -15,8 +15,7 @@ background-color: Transparent;
 background-repeat:no-repeat;
 margin: 0px;
 }
-
-#my-melo-tag {
+#MyMeloTag {
   position: absolute;              /* stays in place when scrolling */
   top: 68%;
   left: 29%;
