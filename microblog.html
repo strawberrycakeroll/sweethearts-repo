@@ -112,15 +112,15 @@
     const MeloPage = document.getElementById('MeloPage');
 
     // When button A is clicked, hide A and show B
-    buttonA.addEventListener('click', () => {
-      buttonA.style.display = 'none';
-      buttonB.style.display = 'inline-block';
+    MyMeloTag.addEventListener('click', () => {
+      MyMeloTag.style.display = 'none';
+      MeloPage.style.display = 'inline-block';
     });
 
     // When button B is clicked, hide B and show A again
-    buttonB.addEventListener('click', () => {
-      buttonB.style.display = 'none';
-      buttonA.style.display = 'inline-block';
+    MeloPage.addEventListener('click', () => {
+      MeloPage.style.display = 'none';
+      MyMeloTag.style.display = 'inline-block';
     });
   </script>
 
