@@ -14,7 +14,7 @@ background-repeat:no-repeat;
 
 #my-melo-tag {
   position: absolute;              /* stays in place when scrolling */
-  top: 600px;                   /* distance from top */
+  top: 650px;                   /* distance from top */
   left: 519px;                  /* distance from left */
   z-index: 1000;                /* above other content */
 }
