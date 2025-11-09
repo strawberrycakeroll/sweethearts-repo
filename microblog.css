@@ -18,7 +18,7 @@ margin: 0px;
 
 #my-melo-tag {
   position: absolute;              /* stays in place when scrolling */
-  top: 39%;
-  left: 19%;
+  top: 60%;
+  left: 40%;
   z-index: 1000;
 }
