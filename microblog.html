@@ -8,33 +8,55 @@
     <link rel="stylesheet" type="text/css" href="microblog.css">
   </head>
   <body>
+
+
+    <!-- top banner -->
  <div style="text-align: center;">
    <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/tumblr_ba2175e9e5c7432d65c29bd8020b7009_ab2d0188_2048.webp" width="100%" height="75%" alt="dollywons on tumblr">
   
-
+<!-- notebook cover -->
    <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/Untitled620_20251106193222.png" width="40%" height="30%" alt="photo taken by me!">
     </div>
+<!-- my melody page -->
+    <button id="melo-page" style="display:none;" class="image-button" style="background: transparent; border: none;">
+    <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/Untitled621_20251106194836.png"
+         alt="my melo page"
+         style="width: 40%; height: auto;">
+  </button>
+</div>
 
+    <!-- my melody tab  -->
      <div id="my-melo-tag" style="
   display: flex;
   margin-top: 40px;
   background-color: transparent;
 ">
-  <button onclick="alert('tag 1 clicked')" style="background: transparent; border: none;">
+
+<button id="melo-tag" class="image-button" style="background: transparent; border: none;">
     <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/Untitled621_20251106194836.png"
          alt="my melo tag"
          style="width: 30%; height: auto;">
   </button>
 </div>
 
-<!-- <div style="width: 50px; height: 50px;" background-color: transparent;>
+
+
+       
+  <!-- <button onclick="alert('tag 1 clicked')" style="background: transparent; border: none;">
+    <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/Untitled621_20251106194836.png"
+         alt="my melo tag"
+         style="width: 30%; height: auto;">
+  </button>
+</div>
+
+<div style="width: 50px; height: 50px;" background-color: transparent;>
   <button onclick="alert('button')">
  <img src="https://file.garden/Z_fobQ8HS2YH3ES0/rentry/Blood%20of%20Adeline.png" alt="Button Image" style="width: 50px; height: 50px; background-color: transparent;">
     </button>
   </div>
--->
 
-<!-- <div style="width: 30%; height: 18%;" background-color: transparent;>
+
+<div style="width: 30%; height: 18%;" background-color: transparent;>
   <button onclick="alert('tag 1 clicked')">
  <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/Untitled621_20251106194836.png" alt="my melo tag" style="width: 30%; height: 18%; background-color: transparent;">
     </button>
@@ -47,7 +69,66 @@
 
 
 
-
+<!-- bottom banner -->
     <img src="https://file.garden/Z_fobQ8HS2YH3ES0/sweetheart_imgs/tumblr_abc1ae7735a390a246db5e1761d57865_b5f6edd0_2048.png" width="100%" height="50%" alt="dollywons on tumblr">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- button script -->
+     <script>
+    // Get both buttons
+    const my-melo-tag = document.getElementById('buttonA');
+    const melo-page = document.getElementById('buttonB');
+
+    // When button A is clicked, hide A and show B
+    buttonA.addEventListener('click', () => {
+      buttonA.style.display = 'none';
+      buttonB.style.display = 'inline-block';
+    });
+
+    // When button B is clicked, hide B and show A again
+    buttonB.addEventListener('click', () => {
+      buttonB.style.display = 'none';
+      buttonA.style.display = 'inline-block';
+    });
+  </script>
+
+
+
+
+
+
+    
   </body>
 </html>
